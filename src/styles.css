@@ -1,0 +1,27 @@
+:root{
+  --cream:#FAF6EF;
+  --sage:#8BAF8A;
+  --sage-dark:#5C8A5B;
+  --sage-light:#C8DEC7;
+  --blush:#E8C4B8;
+  --blush-dark:#C8907A;
+  --gold:#C8A96E;
+  --gold-light:#EDD9A3;
+  --text:#3A3228;
+  --text-soft:#7A6E63;
+  --white:#FFFFFF;
+  --petal1:#F4B8C8;
+  --petal2:#C8DEC7;
+  --petal3:#EDD9A3;
+  --petal4:#B8D4E8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);font-family:Georgia,serif}
+textarea,input,select{font-family:Georgia,serif}
+textarea:focus,input:focus{border-color:var(--sage)!important;outline:none}
+select:focus{outline:none}
+.butterfly{animation:flutter 2.5s ease-in-out infinite;transform-origin:center}
+@keyframes flutter{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-8px) rotate(3deg)}}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-thumb{background:var(--sage-light);border-radius:4px}
+button:active{transform:scale(0.96)}
